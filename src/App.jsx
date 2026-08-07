@@ -1,13 +1,16 @@
-import tailwindcss from "@tailwindcss/vite"
+// Text - #e3e0ee
+// Background - #0f0c18
+// Primary - #b2a6d4
+// Secondary - #443474
+// Accent - #7258ba
+import Card from "./components/Card.jsx"
+import MyImage from "./assets/me_anime.png"
 
-function App() {
-    return (
-      <div className="min-h-screen bg-black flex items-center justify-center">
-            <h1 className="text-6xl font-bold text-red-500">
-                Tailwind Works
-            </h1>
-      </div>
-    )
+
+export default function App() {
+  return (
+    <div className="App bg-[#0f0c18] text-[#e3e0ee] min-h-screen flex flex-col items-center justify-center">
+      <Card />
+    </div>
+  );
 }
-
-export default App
