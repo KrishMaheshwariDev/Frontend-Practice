@@ -6,10 +6,13 @@
 
 // import Card from "./components/Card.jsx"
 // import MyImage from "./assets/me_anime.png"
+import Counter from "./components/Counter.jsx"
 
 
 export default function App() {
   return (
-    <h1>Hello World</h1>
+    <div className="bg-[#0f0c18] flex justify-center items-center min-h-screen">
+      <Counter />
+    </div>
   );
 }
