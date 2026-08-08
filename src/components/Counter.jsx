@@ -24,12 +24,9 @@ function Counter(){
         setCount(0);
     }
 
-    // console.log("Counter component rendered.");
-
-    let Counter_props = "text-[#ffffff] text-lg mb-4"; // Default color
+    let Counter_props;
     if (count > 0) {
         Counter_props = "text-[#00ff00] text-lg mb-4"; // green color for positive count
-        console.log("Counter is positive. color green");
     } else if (count < 0) {
         Counter_props = "text-[#ff0000] text-lg mb-4"; // red color for negative count
     } else{
@@ -57,7 +54,7 @@ function Counter(){
     return (
         <div className="bg-[#b2a6d4] text-[#e3e0ee] w-[210px] flex flex-col items-center justify-center p-4 rounded-lg">
             <h1 className="text-[#e3e0ee] text-2xl font-bold mb-4">Counter</h1>
-            <p className={Counter_props}>Count: {count}</p>
+            <p className={`text-lg mb-4 ${Counter_props}`}>Count: {count}</p>
             <div className="flex gap-2 mb-4 mt-2">
                 <button onClick={decrementCount} className={decrementButtonClass}>
                     -
