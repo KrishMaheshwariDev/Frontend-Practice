@@ -6,13 +6,14 @@
 
 // import Card from "./components/Card.jsx"
 // import MyImage from "./assets/me_anime.png"
-import Counter from "./components/Counter.jsx"
+// import Counter from "./components/Counter.jsx"
+import TODO from "./core/TODO.jsx"
 
 
 export default function App() {
   return (
-    <div className="bg-[#0f0c18] flex justify-center items-center min-h-screen">
-      <Counter />
+    <div className="bg-[#130614] flex justify-center items-center min-h-screen">
+      <TODO />
     </div>
   );
 }
